@@ -17,6 +17,7 @@
 
 require "temperature"
 
+
 describe "temperature conversion functions" do
 
   describe "#ftoc" do
@@ -56,7 +57,7 @@ describe "temperature conversion functions" do
     it "converts body temperature" do
       ctof(37).should be_within(0.1).of(98.6)
       # Why do we need to use be_within?
-      # See http://www.ruby-forum.com/topic/169330
+      # See +
       # and http://en.wikipedia.org/wiki/IEEE_754-2008
       # and http://en.wikipedia.org/wiki/Double_precision_floating-point_format
       # Also, try "puts 0.5 - 0.4 - 0.1" -- pretty crazy, right?
